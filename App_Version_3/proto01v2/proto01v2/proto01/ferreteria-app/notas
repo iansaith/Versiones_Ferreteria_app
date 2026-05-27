@@ -1,0 +1,6 @@
+creador de la app: npm create vite@latest
+instalor de node modules: npm install
+poner la carpeta correcta: cd ferreteria-app
+iniciar la app: npm run dev 
+conectar el "db.json": json-server --watch db.json --port 3005
+instalador del axios: npm install axios react-router-dom   
