@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@ferreteria.com",
+      "password": "admin123",
+      "name": "Administrador",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "usuario@ferreteria.com",
+      "password": "user123",
+      "name": "Juan Pérez",
+      "role": "user"
+    },
+    {
+      "name": "jose",
+      "email": "jose@gmail.com",
+      "password": "jose123",
+      "role": "user",
+      "id": "O1bMXKAZlsM"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Taladro Bosch",
+      "minStock": 3,
+      "currentLocation": "Bodega 1",
+      "category": "Herramienta eléctrica",
+      "mainSupplier": "Distribuidora Bosch",
+      "price": 450000,
+      "wholesalePrice": 380000,
+      "profit": 70000,
+      "stock": 10,
+      "image": ""
+    },
+    {
+      "id": "2",
+      "name": "Martillo Stanley",
+      "minStock": 5,
+      "currentLocation": "Bodega 2",
+      "category": "Herramientas manuales",
+      "mainSupplier": "Ferreteria Central",
+      "price": 45000,
+      "wholesalePrice": 30000,
+      "profit": 15000,
+      "stock": 25,
+      "image": ""
+    }
+  ],
+  "categories": [
+    {
+      "name": "Herramienta eléctrica",
+      "description": "Taladros, sierras, amoladoras",
+      "icon": "⚡",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Pinturas",
+      "description": "Pinturas, esmaltes, solventes",
+      "icon": "🎨"
+    },
+    {
+      "id": "3",
+      "name": "Herramientas manuales",
+      "description": "Martillos, destornilladores, llaves",
+      "icon": "🔨"
+    }
+  ]
+}

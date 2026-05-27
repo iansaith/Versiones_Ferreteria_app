@@ -1,0 +1,37 @@
+const ItemProducto = ({ producto, esAdmin, onEditar, onEliminar }) => {
+  const formatearPrecio = (valor) => {
+    return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP', minimumFractionDigits: 0 }).format(valor)
+  }
+
+  return (
+    <div className="product-card">
+      <h5 className="mb-3">{producto.name}</h5>
+
+      <div className="row g-2 mb-3">
+        <div className="col-6">
+          <p className="mb-1"><strong>Ubicacion:</strong> {producto.currentLocation}</p>
+          <p className="mb-1"><strong>Categoria:</strong> {producto.category}</p>
+          <p className="mb-1"><strong>Proveedor:</strong> {producto.mainSupplier}</p>
+        </div>
+        <div className="col-6">
+          <p className="mb-1"><strong>Precio venta:</strong> <span className="text-success fw-semibold">{formatearPrecio(producto.price)}</span></p>
+          <p className="mb-1"><strong>Precio mayorista:</strong> <span className="text-muted text-decoration-line-through">{formatearPrecio(producto.wholesalePrice)}</span></p>
+          <p className="mb-1"><strong>Ganancia:</strong> <span className="text-success fw-bold">{formatearPrecio(producto.profit)}</span></p>
+        </div>
+      </div>
+
+      <div>
+        {esAdmin ? (
+          <div className="d-flex gap-2">
+            <button className="btn btn-warning btn-sm" onClick={() => onEditar(producto)}>Editar</button>
+            <button className="btn btn-danger btn-sm" onClick={() => onEliminar(producto.id)}>Eliminar</button>
+          </div>
+        ) : (
+          <span className="text-muted fst-italic small">Solo Admin puede editar</span>
+        )}
+      </div>
+    </div>
+  )
+}
+
+export default ItemProducto
