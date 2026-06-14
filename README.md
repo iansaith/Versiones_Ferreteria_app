@@ -1,2 +1,3 @@
 # Versiones_Ferreteria_app
-en este repositorio se muestra las versiones de la app para la ferreteria 
+
+Sistema de gestión de inventario para ferretería desarrollado con React, Vite, Node.js, Express y MySQL.
