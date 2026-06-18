@@ -1,0 +1,45 @@
+creador de la app: npm create vite@latest
+instalor de node modules: npm install
+instalador libreria "jose": npm install jose
+poner la carpeta correcta: cd ferreteria-app
+
+// en caso de generar este error:
+
+npm error While resolving: eslint-plugin-react-hooks@4.6.2
+npm error Found: eslint@9.39.4
+
+instalar eslint 8.57.1
+
+npm install eslint@8.57.1 --save-dev
+
+//
+
+
+iniciar la app: npm run dev 
+conectar el "db.json": json-server --watch db.json --port 3005
+si db.json no esta agregado al path: npx json-server --watch db.json --port 3005
+instalador del axios: npm install axios react-router-dom   
+instalar json server: npm install json-server
+
+
+dependencias backend: mkdir backend
+cd backend
+npm init -y
+npm install express mysql2 jsonwebtoken bcryptjs cors dotenv
+
+
+iniciar el proyecto:
+cd backend 
+npm run dev 
+
+cd ferreteria-app
+npm run dev 
+
+los usuarios no están en este script porque sus contraseñas usan bcrypt 
+que solo se puede generar desde Node.js. se debe ejecutar el script 
+de migración después de correr el backend:
+node scripts/migrarUsuarios.js
+
+
+Nodemailer  biblioteca  para enviar correos 
+npm install nodemailer crypto
